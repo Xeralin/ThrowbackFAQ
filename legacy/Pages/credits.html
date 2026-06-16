@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Credits | Throwback FAQ">
+    <meta property="og:description" content="A big thank you to everyone who has contributed to making Operation Throwback possible.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Credits</title>
+</head>
+<body>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item">Community Servers</a>
+                <a href="./credits.html" class="nav-item active">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / <span>Credits</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Community</div>
+                    <h2><em>Credits</em></h2>
+                    <p>A big thank you to everyone who has contributed to making Operation Throwback possible.</p>
+                </div>
+                <div class="hero-corner">THX</div>
+            </div>
+
+            <div id="devBox" class="dev-card-container"></div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+
+const users = [
+    { name: 'Astrea',          role: 'admin',           title: 'Owner',             tags: ['Owner', 'Lead Dev of Artemis'],                                             github: 'https://github.com/Astrea0014',                    dono: null,                                     avatar: '../static/img/Discord_Avatars/Astrea.webp',                sections: ['currentStaff'] },
+    { name: 'Puppetino',       role: 'admin',           title: 'Administrator',     tags: ['Lead FAQ Developer', 'Admin', 'DC Bot OTB Manager'],                        github: 'https://github.com/Puppetino',                     dono: 'https://www.buymeacoffee.com/Puppetino', avatar: '../static/img/Discord_Avatars/Puppetino.webp',             sections: ['currentStaff', 'faqContributors'] },
+    { name: 'Midly',           role: 'admin',           title: 'Administrator',     tags: ['Admin', 'Senior Helper'],                                                   github: 'https://github.com/midly202',                      dono: null,                                     avatar: '../static/img/Discord_Avatars/Midly.webp',                 sections: ['currentStaff'] },
+    { name: 'Lungu',           role: 'moderator',       title: 'Moderator',         tags: ['Moderator', 'Throwbackloader'],                                             github: null,                                               dono: null,                                     avatar: '',                                                         sections: ['currentStaff'] },
+    { name: 'Muhnkie',         role: 'moderator',       title: 'Moderator',         tags: ['Moderator', 'Developer'],                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Muhnkie.webp',               sections: ['currentStaff'] },
+    { name: 'Spit',            role: 'moderator',       title: 'Moderator',         tags: ['Moderator'],                                                                github: 'https://github.com/OgSpit',                        dono: null,                                     avatar: '',                                                         sections: ['currentStaff'] },
+    { name: 'Auralicy',        role: 'moderator',       title: 'Moderator',         tags: ['Moderator', 'Senior Helper'],                                               github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Auralicy.webp',              sections: ['currentStaff'] },
+    { name: 'AKrisz2',         role: 'developer',       title: 'Developer',         tags: ['Developer', 'AKrisz Downloader'],                                           github: 'https://github.com/AKrisz2',                       dono: null,                                     avatar: '../static/img/Discord_Avatars/Akrisz.webp',                sections: ['currentStaff'] },
+    { name: 'Benjaminstrike',  role: 'developer',       title: 'Developer',         tags: ['Developer', 'AI Helper'],                                                   github: 'https://github.com/benjaminstrike',                dono: null,                                     avatar: '../static/img/Discord_Avatars/Benjaminstrike.gif',         sections: ['currentStaff'] },
+    { name: 'Lordelias',       role: 'developer',       title: 'Developer',         tags: ['Developer'],                                                                github: 'https://github.com/LordEliasTM',                   dono: null,                                     avatar: '../static/img/Discord_Avatars/Lordelias.webp',             sections: ['currentStaff'] },
+    { name: '0xLusion',        role: 'developer',       title: 'Developer',         tags: ['Developer'],                                                                github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/0xLusion.webp',              sections: ['currentStaff'] },
+    { name: 'JVAV',            role: 'developer',       title: 'Developer',         tags: ['FAQ Developer', 'Original FAQ', 'Senior Helper', 'JVAV Downloader'],        github: 'https://github.com/JOJOVAV',                       dono: null,                                     avatar: '../static/img/Discord_Avatars/JVAV.webp',                  sections: ['currentStaff', 'faqContributors'] },
+    { name: 'Techtical-',      role: 'seniorhelper',    title: 'Senior Helper',     tags: ['Helper', 'Senior Helper'],                                                  github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Techtical.webp',             sections: ['currentStaff'] },
+    { name: 'Trom',            role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Trom.webp',                  sections: ['currentStaff'] },
+    { name: 'ConfusingFool93', role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: 'https://github.com/AvacadoWizard120',              dono: null,                                     avatar: '../static/img/Discord_Avatars/ConfusingFool93.webp',       sections: ['currentStaff'] },
+    { name: 'Cauterite',       role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: 'https://github.com/Cauterite',                     dono: null,                                     avatar: '../static/img/Discord_Avatars/Cauterite.webp',             sections: ['currentStaff'] },
+    { name: 'dredis-',         role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Dredis-.webp',               sections: ['currentStaff'] },
+    { name: 'Onyx',            role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Onyx.webp',                  sections: ['currentStaff'] },
+    { name: 'Swerve2k',        role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Swerve2k.webp',              sections: ['currentStaff'] },
+    { name: 'xanax',           role: 'helper',          title: 'Helper',            tags: ['Helper'],                                                                   github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Xanax.webp',                 sections: ['currentStaff'] },
+    
+    { name: 'Lonewolf',        role: 'goon',            title: 'goon',              tags: [],                                                                           github: 'https://github.com/BHLoneWolf0',                   dono: null,                                     avatar: '../static/img/Discord_Avatars/Lonewolf.webp',              sections: ['formerStaff'] },
+    { name: 'SlejmUr',         role: 'goon',            title: 'Goon',              tags: ['SlejmUr Downloader'],                                                       github: 'https://github.com/SlejmUr',                       dono: null,                                     avatar: '../static/img/Discord_Avatars/SlejmUr.webp',               sections: ['formerStaff'] },
+    { name: 'AsianStreetMeat', role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/AsianStreetMeat.webp',       sections: ['formerStaff'] },
+    { name: 'Bird',            role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Bird.webp',                  sections: ['formerStaff'] },
+    { name: 'Chæto',           role: 'goon',            title: 'Goon',              tags: ['Liberator', 'Owner'],                                                                github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Cheato.webp',                sections: ['formerStaff'] },
+    { name: 'Darkxrose',       role: 'goon',            title: 'Goon',              tags: ['FAQ Contributor'],                                                          github: 'https://github.com/Crxptxc',                       dono: null,                                     avatar: '../static/img/Discord_Avatars/Darkxrose.webp',             sections: ['formerStaff'] },
+    { name: 'Seopung',         role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Seopung.webp',               sections: ['formerStaff'] },
+    { name: 'Ernie',           role: 'goon',            title: 'Goon',              tags: [],                                                                           github: 'https://github.com/ErnieDaTryHard',                dono: null,                                     avatar: '../static/img/Discord_Avatars/Ernie.webp',                 sections: ['formerStaff'] },
+    { name: 'Gibbou',          role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Gibbou.webp',                sections: ['formerStaff'] },
+    { name: 'killahtree',      role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Killahtree.webp',            sections: ['formerStaff'] },
+    { name: 'Wil-',            role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Wil-.webp',                  sections: ['formerStaff'] },
+    { name: 'Pixie',           role: 'goon',            title: 'Goon',              tags: [],                                                                           github: null,                                               dono: null,                                     avatar: '../static/img/Discord_Avatars/Pixie.webp',                 sections: ['formerStaff'] }
+];
+
+const sectionOrder = [
+    { id: 'faqContributors',    label: 'FAQ Contributors' },
+    { id: 'currentStaff',       label: 'Current Staff' },
+    { id: 'formerStaff',        label: 'Former Staff' },
+];
+
+const container = document.getElementById('devBox');
+
+function render() {
+    container.innerHTML = '';
+    sectionOrder.forEach(({ id, label }) => {
+        const sectionUsers = users.filter(u => u.sections.includes(id));
+        if (!sectionUsers.length) return;
+
+        const section = document.createElement('div');
+        section.className = 'dev-card-section';
+
+        const titleEl = document.createElement('div');
+        titleEl.className = 'dev-card-section-title';
+        titleEl.textContent = label;
+        section.appendChild(titleEl);
+
+        const row = document.createElement('div');
+        row.className = 'dev-card-row';
+
+        sectionUsers.forEach(user => {
+            const card = document.createElement('div');
+            card.className = 'dev-card';
+
+            const avatarSrc = user.avatar || `https://cdn.discordapp.com/embed/avatars/${Math.floor(Math.random() * 5)}.png`;
+
+            const tagItems = user.tags.map(t => `<span class="dev-card-tag">${t}</span>`).join('');
+            const links = [
+                user.github ? `<a href="${user.github}" target="_blank" title="GitHub"><img src="https://cdn.simpleicons.org/github/FFFFFF" class="icon-link" alt="GitHub"></a>` : '',
+                user.dono   ? `<a href="${user.dono}"   target="_blank" title="Donate"><img src="../static/img/others/piggy-bank.svg" class="icon-link" alt="Donate"></a>` : '',
+            ].join('');
+
+            card.innerHTML = `
+                <img src="${avatarSrc}" alt="${user.name}" class="dev-card-image" onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'">
+                <div class="dev-card-body">
+                    <div class="dev-card-title">${user.name}</div>
+                    <div class="dev-card-role ${user.role}">${user.title}</div>
+                    <div class="dev-card-tags">${tagItems}</div>
+                    ${links ? `<div class="dev-card-links">${links}</div>` : ''}
+                </div>
+            `;
+
+            row.appendChild(card);
+        });
+
+        section.appendChild(row);
+        container.appendChild(section);
+    });
+}
+
+render();
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>
+

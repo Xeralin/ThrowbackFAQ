@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Modding Tools | Throwback FAQ">
+    <meta property="og:description" content="Tools and guides for modifying and extending old Rainbow Six Siege.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Modding Tools</title>
+</head>
+<body>
+<div class="scanlines"></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item active">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item">Community Servers</a>
+                <a href="./credits.html" class="nav-item">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / <span>Modding Tools</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Tools & Mods</div>
+                    <h2><em>Modding Tools</em></h2>
+                    <p>Tools and guides for modifying and extending old Rainbow Six Siege.</p>
+                </div>
+                <div class="hero-corner">MOD</div>
+            </div>
+
+            <div class="section-title">Guides</div>
+            <div class="card-grid">
+                <a href="./heatedMetal.html" class="nav-card wip">
+                    <div class="nav-card-title">Heated Metal</div>
+                    <div class="nav-card-desc">Full SDK for Shadow Legacy — includes a map editor, scripting language, unlock all, and more.</div>
+                    <div class="nav-card-arrow">→ COMING SOON</div>
+                </a>
+                <a href="./liberator.html" class="nav-card">
+                    <div class="nav-card-title">Liberator</div>
+                    <div class="nav-card-desc">Unlock all cosmetics and play custom game modes in Year 1 Season 1 through Year 4 Season 4.</div>
+                    <div class="nav-card-arrow">→ READ MORE</div>
+                </a>
+                <a href="./mods_CheatEngine.html" class="nav-card wip">
+                    <div class="nav-card-title">Cheat Engine</div>
+                    <div class="nav-card-desc">How to use Cheat Engine to modify the game.</div>
+                    <div class="nav-card-arrow">→ COMING SOON</div>
+                </a>
+            </div>
+
+            <div class="section-title">External Links</div>
+            <div class="card-grid">
+                <a href="https://github.com/JOJOVAV/r6-tools" target="_blank" class="nav-card">
+                    <div class="nav-card-title">Additional Modding Tools</div>
+                    <div class="nav-card-desc">Includes R6Liberator2, R6SGlobal_ShadowLegacy, R6S_VoidEdge, Shears, and more.</div>
+                    <div class="nav-card-arrow">→ OPEN ON GITHUB</div>
+                </a>
+                <a href="https://www.radmin-vpn.com/" target="_blank" class="nav-card">
+                    <div class="nav-card-title">Radmin VPN</div>
+                    <div class="nav-card-desc">Free VPN software used to connect with other players for local multiplayer.</div>
+                    <div class="nav-card-arrow">→ OPEN LINK</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>

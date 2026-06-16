@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Common Errors | Throwback FAQ">
+    <meta property="og:description" content="Solutions to the most frequently encountered game issues and errors.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Common Errors</title>
+</head>
+<body>
+<div class="scanlines"></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item active">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item">Community Servers</a>
+                <a href="./credits.html" class="nav-item">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / Support / <span>Common Errors</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Troubleshooting</div>
+                    <h2><em>Common Errors</em></h2>
+                    <p>Solutions to the most frequently encountered game issues and errors.</p>
+                </div>
+                <div class="hero-corner">ERR</div>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">I don't own Rainbow Six: Siege on Steam. Can I use my Ubisoft or Epic Games account?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>No. The downloaders use Steam's depot service to download old game versions from Steam's servers. This requires a valid Steam account with a registered license for Rainbow Six: Siege. Ubisoft Connect and Epic Games accounts cannot be used to authenticate with Steam's servers.</p>
+                            <p><a href="https://store.steampowered.com/app/359550/" taget="_blank">Rainbow Six: Siege is free on Steam</a>, so you can add it to your library at no cost. Once it's in your library the downloaders will work.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">Can I use controller / Why is my game stuck on controller input?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>Controllers are supported out of the box. Simply plug in your controller and it should be detected automatically. Note that PS5 (DualSense) controllers require additional third-party software (such as DS4Windows) to function properly.</p>
+                            <p>If your game is stuck on controller input, try one of the following: disconnect your controller if its still connected and restart the game.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">How do I fix the MSVCRXXX.dll error?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>This error means your system is missing a required Microsoft Visual C++ Redistributable package. To fix it:</p>
+                            <ol>
+                                <li>Visit <a href="https://github.com/abbodi1406/vcredist/releases/latest" target="_blank">this page</a> on GitHub.</li>
+                                <li>Download the ZIP file (not the source code).</li>
+                                <li>Extract the contents and run <strong>install_all.bat</strong> as administrator.</li>
+                                <li>Restart your PC and try launching the game again.</li>
+                            </ol>
+                            <p class="note">If the error persists, make sure Windows is fully up to date, then repeat the steps above.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">How do I fix the uplay_rx_loader64.dll error?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>This error usually occurs when your antivirus has blocked or removed a required file.</p>
+                            <ol>
+                                <li>Add your game folder as an exclusion in your antivirus settings.</li>
+                                <li>Re-apply the crack files from the Operation Throwback Discord server.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">How do I fix missing or corrupt DLL files?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>If you get an error mentioning any of the following files, the fix is the same for all of them:</p>
+                            <ul>
+                                <li>amd_ags_x64.dll</li>
+                                <li>gfsdk_ssao_d3d11.win64.dll</li>
+                                <li>vivosxdk_x64.dll</li>
+                                <li>bink2w64.dll</li>
+                            </ul>
+                            <ol>
+                                <li>Delete the specified .dll file from your game folder.</li>
+                                <li>Run the downloader again to verify and restore missing files.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">My old Siege version opens the current version or Ubisoft Connect instead.</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <ol>
+                                <li><strong>Check your antivirus:</strong> Some crack files may be flagged and removed. Make sure your game folder has an exclusion set up.</li>
+                                <li><strong>Re-apply the crack:</strong> Download the correct crack from the Operation Throwback Discord server.</li>
+                                <li><strong>Replace files:</strong> Copy the contents of the crack folder into your game directory, replacing existing files.</li>
+                            </ol>
+                            <p>Once done, try launching the game again.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">My game is stuck on "Preparing Content", how do I fix it?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <ol>
+                                <li><strong>Restart the game:</strong> Close it completely via Task Manager and try again.</li>
+                                <li><strong>Verify your files:</strong> Run the downloader and let it check for missing or corrupted files.</li>
+                                <li><strong>Check your antivirus:</strong> If the issue persists, your antivirus may have removed files. Exclude your game folder and re-apply the crack if needed.</li>
+                            </ol>
+                            <p class="note">This issue usually resolves itself after a restart. Verifying files is a reliable second step.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">Why is my .exe / launch file missing?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>If the executable is missing, it's usually caused by your antivirus removing it. To fix it:</p>
+                            <ol>
+                                <li>Add your game folder as an exclusion in your antivirus settings.</li>
+                                <li>Run the downloader again to verify and re-download any missing files.</li>
+                            </ol>
+                            <p class="note">If files keep going missing after verifying, double-check that your antivirus exclusion is set correctly before running the downloader again.</p>
+                            <p>If verifying doesn't help, you may need SKU RUS. Visit the <a href="./downloaders.html">Downloaders page</a> for more details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">My game crashes at the start screen after pressing the button.</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>If you're on an older crack, this is usually caused by a duplicate gamename in the .ini files. To fix it:</p>
+                            <ol>
+                                <li>Open <strong>codex.ini</strong> in your game folder.</li>
+                                <li>Find the <strong>GameName</strong> field and change it to any unique name.</li>
+                                <li>If you have multiple seasons installed, make sure each one has a different name.</li>
+                            </ol>
+                            <p class="note">This fix does not apply to the current Throwbackloader crack.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">How do I change my in-game name or username?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>Your username is stored in a config file in your game folder.</p>
+                            <ul>
+                                <li>For the current Throwbackloader crack, open <strong>ThrowbackLoader.toml</strong> and edit the <strong>username</strong> field. Limit of 16 characters.</li>
+                                <li>For older cracks, open <strong>codex.ini</strong> and edit the <strong>UserName</strong> and <strong>GameName</strong> fields.</li>
+                            </ul>
+                            <p class="note">Make sure to save the file before launching the game.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">My game is in Russian. How do I switch to English?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>If you installed the SKU RUS version and want to change the language:</p>
+                            <ol>
+                                <li>Download the <strong>localization.lang</strong> file from the <strong>#guides-and-faqs</strong> channel on the Operation Throwback Discord server.</li>
+                                <li>Move it to your game folder, replacing the existing file.</li>
+                                <li>Launch the game. It should now be in English.</li>
+                            </ol>
+                            <p>If you're unsure whether you need SKU RUS, refer to the <a href="./downloaders.html">Downloaders page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-header">
+                        <div class="question-title">Why do I get a "User profile loading failed" error?</div>
+                        <svg class="question-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </div>
+                    <div class="answer">
+                        <div class="answer-inner">
+                            <p>This error is expected and does not affect gameplay. Simply click <strong>OK</strong> and the game will continue as normal.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+
+document.querySelectorAll('.question').forEach(q => {
+    q.addEventListener('click', () => {
+        const answer = q.querySelector('.answer');
+        const isOpen = q.classList.contains('open');
+        q.classList.toggle('open');
+        answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+    });
+});
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>
