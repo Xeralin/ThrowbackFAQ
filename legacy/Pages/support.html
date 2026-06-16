@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Support | Throwback FAQ">
+    <meta property="og:description" content="Find guides for common issues, or learn how to get help from the community and staff.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Support</title>
+</head>
+<body>
+<div class="scanlines"></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item active">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item">Community Servers</a>
+                <a href="./credits.html" class="nav-item">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / <span>Support</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Troubleshooting</div>
+                    <h2><em>Support</em></h2>
+                    <p>Find guides for common issues, or learn how to get help from the community and staff.</p>
+                </div>
+                <div class="hero-corner">HELP</div>
+            </div>
+
+            <div class="section-title">Support Guides</div>
+            <div class="card-grid">
+                <a href="./how_to_get_help.html" class="nav-card">
+                    <div class="nav-card-title">How To Get Help</div>
+                    <div class="nav-card-desc">Find out how to report issues effectively and get support from staff.</div>
+                    <div class="nav-card-arrow">→ READ MORE</div>
+                </a>
+                <a href="./common_errors.html" class="nav-card">
+                    <div class="nav-card-title">Common Errors</div>
+                    <div class="nav-card-desc">Solutions for crashes, DLL errors, missing files, and other frequent problems.</div>
+                    <div class="nav-card-arrow">→ READ MORE</div>
+                </a>
+                <a href="./antivirus.html" class="nav-card">
+                    <div class="nav-card-title">Antivirus Issues</div>
+                    <div class="nav-card-desc">Common antivirus issues and how to fix them, including false-positive detections.</div>
+                    <div class="nav-card-arrow">→ READ MORE</div>
+                </a>
+                <a href="./multiplayer.html" class="nav-card">
+                    <div class="nav-card-title">Multiplayer</div>
+                    <div class="nav-card-desc">How to set up and play with others, including common connection issues.</div>
+                    <div class="nav-card-arrow">→ READ MORE</div>
+                </a>
+                <a href="./youtube.html" class="nav-card">
+                    <div class="nav-card-title">Video Guides</div>
+                    <div class="nav-card-desc">A collection of video guides covering setup, troubleshooting, and gameplay.</div>
+                    <div class="nav-card-arrow">→ COMING SOON</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>

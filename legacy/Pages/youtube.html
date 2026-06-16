@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Video Guides | Throwback FAQ">
+    <meta property="og:description" content="A collection of video guides covering setup, troubleshooting, and gameplay tips.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Video Guides</title>
+</head>
+<body>
+<div class="scanlines"></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item active">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item">Community Servers</a>
+                <a href="./credits.html" class="nav-item">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / Support / <span>Video Guides</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Support</div>
+                    <h2><em>Video Guides</em></h2>
+                    <p>A collection of video guides covering setup, troubleshooting, and gameplay tips.</p>
+                </div>
+                <div class="hero-corner">YT</div>
+            </div>
+
+            <div class="notice">
+                <strong>// MORE GUIDES PLANNED</strong>
+                Additional guides are still in planning. Want your guide featured here? Contact @Puppetino directly and it may be added if it meets the quality requirements.
+            </div>
+
+            <div class="section-title">Getting Started</div>
+
+            <div class="video-grid">
+
+                <div class="video-card">
+                    <a href="https://www.youtube.com/watch?v=HuzP-vYgBZU" target="_blank" class="video-thumb-wrap">
+                        <img class="video-thumb" src="https://img.youtube.com/vi/HuzP-vYgBZU/maxresdefault.jpg" alt="How to Download the Game">
+                        <div class="video-play-overlay"><div class="video-play-icon"></div></div>
+                    </a>
+                    <div class="video-card-body">
+                        <div class="video-card-tags">
+                            <span class="tag green">Getting Started</span>
+                            <span class="tag">Download</span>
+                        </div>
+                        <div class="video-card-title">How to Download the Game</div>
+                        <div class="video-card-meta">BY AURALICY</div>
+                        <div class="video-card-desc">A step-by-step walkthrough on how to download an older version of Rainbow Six Siege using the community downloader.</div>
+                        <a href="https://www.youtube.com/watch?v=HuzP-vYgBZU" target="_blank" class="downloader-btn">→ Watch on YouTube</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>

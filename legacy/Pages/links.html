@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Community Servers | Throwback FAQ">
+    <meta property="og:description" content="Discord servers for playing, modding, and connecting with other old Siege fans.">
+    <meta property="og:image" content="https://puppetino.github.io/Throwback-FAQ/static/img/RB6_RedCrow_Teaser.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Throwback FAQ">
+    <meta name="theme-color" content="#c0152a">
+    <link rel="icon" href="../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp" type="image/webp">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Throwback FAQ - Community Servers</title>
+</head>
+<body>
+<div class="scanlines"></div>
+<button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+
+<div class="layout">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="game-tag">// R6S COMMUNITY</div>
+            <h1>Operation <span>Throwback</span> FAQ</h1>
+        </div>
+        <nav>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">General</div>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="./getting_started.html" class="nav-item">Getting Started</a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Support</div>
+                <a href="./support.html" class="nav-item">Support Overview</a>
+                <a href="./common_errors.html" class="nav-item">Common Errors</a>
+                <a href="./antivirus.html" class="nav-item">Antivirus</a>
+                <a href="./multiplayer.html" class="nav-item">Multiplayer</a>
+                <a href="./how_to_get_help.html" class="nav-item">How To Get Help</a>
+                <a href="./youtube.html" class="nav-item">Video Guides <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Tools & Mods</div>
+                <a href="./downloaders.html" class="nav-item">Downloaders</a>
+                <a href="./modding_tools.html" class="nav-item">Modding Tools</a>
+                <a href="./liberator.html" class="nav-item">Liberator</a>
+                <a href="./heatedMetal.html" class="nav-item">Heated Metal <span class="badge wip">WIP</span></a>
+                <a href="./mods_CheatEngine.html" class="nav-item">Cheat Engine <span class="badge wip">WIP</span></a>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-label">Community</div>
+                <a href="./links.html" class="nav-item active">Community Servers</a>
+                <a href="./credits.html" class="nav-item">Credits</a>
+            </div>
+        </nav>
+        <div class="sidebar-footer">AUTHORED BY OTB STAFF</div>
+    </aside>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="topbar-breadcrumb">FAQ / <span>Community Servers</span></div>
+        </div>
+        <div class="content">
+
+            <div class="hero">
+                <img class="hero-img" src="../static/img/RB6_RedCrow_Teaser.png" alt="">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Community</div>
+                    <h2><em>Community Servers</em></h2>
+                    <p>Discord servers for playing, modding, and connecting with other old Siege fans.</p>
+                </div>
+                <div class="hero-corner">DC</div>
+            </div>
+
+            <div class="notice">
+                <strong>// NOTE</strong>
+                To add your server to this list, or if an invite link is no longer working, contact us on the <a href="https://discord.gg/yxpT6EChgr" target="_blank">official Discord server</a>.
+            </div>
+
+            <div class="section-title">Servers</div>
+            <div class="server-grid" id="server-grid"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+hamburger.addEventListener('click', () => sidebar.classList.toggle('open'));
+document.addEventListener('click', e => { if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) sidebar.classList.remove('open'); });
+
+const servers = [
+    {
+        name: 'Operation Throwback 2.0',
+        description: 'The official Discord server for R6S: Operation Throwback.',
+        invite: 'yxpT6EChgr',
+        link: 'https://discord.gg/invite/yxpT6EChgr',
+        banner: '../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback_Banner.webp',
+        logo:   '../static/img/Discord_Servers/Operation_Throwback/Operation_Throwback.webp',
+        countId: 'mc-throwback'
+    },
+    {
+        name: 'R6S | Modding United',
+        description: 'A community server focused on modding old Rainbow Six Siege.',
+        invite: 'KYB762Hmh8',
+        link: 'https://discord.com/invite/KYB762Hmh8',
+        banner: '../static/img/Discord_Servers/R6S_Modding_United/R6s_Modding_United_Banner.webp',
+        logo:   '../static/img/Discord_Servers/R6S_Modding_United/R6S_Modding_United.webp',
+        countId: 'mc-mu'
+    },
+    {
+        name: 'Modded LAN Party',
+        description: 'A community server for modded LAN-style games.',
+        invite: '9KByVQXFck',
+        link: 'https://discord.com/invite/9KByVQXFck',
+        banner: '../static/img/RB6_RedCrow_Teaser.png',
+        logo:   '../static/img/Discord_Servers/Modded_LAN_Party/Modded_LAN_Party.webp',
+        countId: 'mc-mlp'
+    },
+    {
+        name: 'Renegades: Old Siege TMs',
+        description: 'The most popular Ten Man server run by the community for old R6S.',
+        invite: 'jdh9hqBCW3',
+        link: 'https://discord.gg/invite/jdh9hqBCW3',
+        banner: '../static/img/Discord_Servers/Renegades/Renegades_Banner.webp',
+        logo:   '../static/img/Discord_Servers/Renegades/Renegades.webp',
+        countId: 'mc-renegades'
+    },
+    {
+        name: 'Operation Throwback: EU Ten Mans',
+        description: 'The official Ten Man server for old R6S dedicated to Europe.',
+        invite: 'pAhkyxmr7u',
+        link: 'https://discord.gg/invite/pAhkyxmr7u',
+        banner: '../static/img/Discord_Servers/Operation_Throwback_EUTM/Operation_Throwback_EU_Banner.webp',
+        logo:   '../static/img/Discord_Servers/Operation_Throwback_EUTM/Operation_Throwback_EU.webp',
+        countId: 'mc-eutm'
+    },
+    {
+        name: 'White Noise Textures',
+        description: 'A server dedicated to custom weapon textures for old R6S.',
+        invite: 'KzXJWkbkZA',
+        link: 'https://discord.gg/invite/KzXJWkbkZA',
+        banner: '../static/img/Discord_Servers/White_Noise_Textures/White_Noise_Textures_Banner.webp',
+        logo:   '../static/img/Discord_Servers/White_Noise_Textures/White_Noise_Textures.webp',
+        countId: 'mc-wnt'
+    }
+];
+
+const grid = document.getElementById('server-grid');
+
+servers.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'server-card';
+    card.innerHTML = `
+        <div class="server-card-banner-wrap">
+            <img src="${s.banner}" alt="${s.name} banner" class="server-card-banner">
+        </div>
+        <img src="${s.logo}" alt="${s.name} logo" class="server-card-pfp">
+        <div class="server-card-body">
+            <div class="server-card-title">${s.name}</div>
+            <div class="server-card-members" id="${s.countId}">Loading...</div>
+            <div class="server-card-desc">${s.description}</div>
+            <a href="${s.link}" target="_blank"><button style="background:var(--red);border:none;color:white;padding:0.45rem 1rem;border-radius:5px;font-family:inherit;font-size:0.85rem;cursor:pointer;transition:background 0.15s;" onmouseover="this.style.background='#a01020'" onmouseout="this.style.background='var(--red)'">Join Discord</button></a>
+        </div>
+    `;
+    grid.appendChild(card);
+
+    fetch(`https://discordapp.com/api/v6/invite/${s.invite}?with_counts=true`)
+        .then(r => r.json())
+        .then(d => {
+            const el = document.getElementById(s.countId);
+            if (el && d.approximate_member_count) el.textContent = `${d.approximate_member_count.toLocaleString()} members`;
+            else if (el) el.textContent = '';
+        })
+        .catch(() => { const el = document.getElementById(s.countId); if (el) el.textContent = ''; });
+});
+</script>
+<script src="../static/js/scroll-anim.js"></script>
+</body>
+</html>
